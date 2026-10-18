@@ -128,7 +128,7 @@ class diaryClass:
 
     def delete_entry(self):
         #print(self.selected_date)
-        con=sqlite3.connect(database=r'diary.db')
+        con=sqlite3.connect(database=r''+self.database_path)
         cur=con.cursor()
         try:
             if self.selected_date=="":
